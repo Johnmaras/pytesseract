@@ -15,7 +15,7 @@ import subprocess
 import tempfile
 import shlex
 import string
-from glob import iglob
+from glob import glob
 from csv import QUOTE_NONE
 from functools import wraps
 from pkgutil import find_loader
@@ -96,7 +96,7 @@ def get_errors(error_string):
 
 def cleanup(temp_name):
     ''' Tries to remove temp files by filename wildcard path. '''
-    for filename in iglob(temp_name + '*' if temp_name else temp_name):
+    for filename in glob(temp_name + '*' if temp_name else temp_name):
         try:
             os.remove(filename)
         except OSError:

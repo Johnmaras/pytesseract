@@ -19,13 +19,14 @@ setup(
     author_email='samuel@hoffstaetter.com',
     maintainer='Matthias Lee',
     maintainer_email='pytesseract@madmaze.net',
+    editted_by="John Mitromaras",
     description=(
         "Python-tesseract is a python wrapper for Google's Tesseract-OCR"
     ),
     long_description=LONG_DESC,
     license='GPLv3',
     keywords='python-tesseract OCR Python',
-    url='https://github.com/madmaze/python-tesseract',
+    url='https://github.com/Johnmaras/pytesseract',
     packages=[PACKAGE_NAME],
     package_dir={PACKAGE_NAME: PACKAGE_DIR},
     include_package_data=True,
